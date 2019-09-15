@@ -4,8 +4,6 @@ const
     
     // modules
 var
-    _ = require('lodash'),
-    moment = require('moment'),
     chalk = require('chalk'),
         // project specific
     XLSX = require('xlsx');
@@ -36,10 +34,9 @@ for (let index = 0; index < g_length; index++) {
         var comparisonAmount = getCellValue(ws["A" + index2])
         // if the search and comparison value amount equal 0 sum, a potential match has been found
         if (amountSearching + comparisonAmount == 0) {
-            var zeroquestion = amountSearching + comparisonAmount;
             var searchingString = "" + getCellValue(ws[projectCol + index]) + getCellValue(ws[poCol + index]) + getCellValue(ws[vendorCol + index])
             var comparisonString = "" + getCellValue(ws[projectCol + index2]) + getCellValue(ws[poCol + index2]) + getCellValue(ws[vendorCol + index2])
-            if (_.includes(searchingString,comparisonString)) {
+            if (searchingString.trim() == comparisonString.trim()) {
                 // The vendor and project's match, now checking the dates
                 searchingDate = getCellValue(ws[dateCol + index])
                 comparisonDate = getCellValue(ws[dateCol + index2])
