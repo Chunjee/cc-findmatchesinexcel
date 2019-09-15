@@ -1,5 +1,5 @@
 {
-  "name": "ppa-excelsearch",
+  "name": "cc-finmatchesinexcel",
   "version": "0.1.0",
   "description": "Excel Searching Script that finds nested duplicates that offset +/-",
   "main": "app.js",
