@@ -1,0 +1,22 @@
+{
+  "name": "ppa-excelsearch",
+  "version": "0.1.0",
+  "description": "Excel Searching Script that finds nested duplicates that offset +/-",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "datetime-diff": "^0.2.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.14.1",
+    "xlsx": "^0.15.1"
+  },
+  "author": "Shawn Brooker",
+  "license": "MIT"
+}

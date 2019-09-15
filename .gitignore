@@ -1,0 +1,12 @@
+# Node stuff
+node_modules
+
+# Excel and alike sheets
+*.xlsb
+*.xlsx
+
+# package.lock
+package-lock.json
+
+# random junk
+ws.json
